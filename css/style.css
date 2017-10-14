@@ -1,0 +1,242 @@
+html {
+  height: 100%;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top {
+  padding: 30px;
+  z-index: 1000;
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+  transition: all 0.2s;
+  color: #0D0D0D;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  border-radius: 30px;
+  box-sizing: border-box;
+  color: #E4032E;
+  background: none;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+  z-index: 1900;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: #0d0d0d;
+}
+
+ul.nav.navbar-nav {
+  margin: 20px 20px;
+}
+
+.in {
+  margin: 37px 20px;
+  background-color: #fff;
+  border: solid 1px black;
+  text-align: center;
+  z-index: 1900;
+}
+
+img.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+img.img-responsive.img-bot {
+  position: absolute;
+  top: 100vh;
+}
+
+img.img-responsive.overlay {
+  min-height: 80%;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -10;
+  transition: 0.2s all;
+}
+
+li {
+  color: #0D0D0D;
+}
+
+a.text-uppercase {
+  font-weight: 600;
+}
+
+div.container {
+  z-index: 5000;
+  margin-top: 100px;
+}
+
+h1 {
+  font-weight: 500;
+  overflow: visible;
+  z-index: 700;
+}
+
+h1.text-uppercase.text-center {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro';
+}
+
+p.text-center {
+  color: #0d0d0d;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+button.btn.btn-default {
+  position: absolute;
+  z-index: 2000;
+  color: white;
+}
+
+div.col-md-12 {
+  text-align: center;
+}
+
+a.btn.btn-default {
+  margin-top: 55px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2000;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+a.btn.btn-default:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 10px 0 rgba(0, 0, 0, 0.19);
+  font-size: 18px;
+}
+
+div.jumbotron {
+  background-color: transparent;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+@media screen and (max-width: 756px) {
+  img.img-responsive.overlay {
+    min-height: 80%;
+    /*position: absolute;*/
+    top: 100px;
+  }
+}
+
+span.iths-name {
+  margin-left: -15px;
+  color: #E4032E;
+}
+
+li {
+  font-size: 20px;
+}
+
+img.scrollDown {
+  height: 50px;
+  border-radius: 30px;
+  padding: 5px;
+  z-index: 2000;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  background-color: #0d0d0d;
+  transform: translate(-50%, -50%);
+  animation: animate-scroll 2s infinite;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUpBig {
+  animation-name: fadeInUpBig;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes animate-scroll {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0) translateZ(0);
+    -moz-transform: translateY(0) translateZ(0);
+    -ms-transform: translateY(0) translateZ(0);
+    -o-transform: translateY(0) translateZ(0);
+    transform: translateY(0) translateZ(0)
+  }
+  40% {
+    -webkit-transform: translateY(-30px) translateZ(0);
+    -moz-transform: translateY(-30px) translateZ(0);
+    -ms-transform: translateY(-30px) translateZ(0);
+    -o-transform: translateY(-30px) translateZ(0);
+    transform: translateY(-30px) translateZ(0)
+  }
+  60% {
+    -webkit-transform: translateY(-15px) translateZ(0);
+    -moz-transform: translateY(-15px) translateZ(0);
+    -ms-transform: translateY(-15px) translateZ(0);
+    -o-transform: translateY(-15px) translateZ(0);
+    transform: translateY(-15px) translateZ(0)
+  }
+}
+
+i.fa {
+  font-size: 40px;
+  color: white;
+  z-index: 700;
+  position: absolute;
+  left: 3%;
+  transition: 0.3s all;
+}
+
+i.fa:hover {
+  transform: scale(1.2);
+}
+
+i.fa.fa-twitter {
+  top: 90%;
+}
+
+i.fa.fa-youtube {
+  top: 82.5%;
+}
+
+i.fa.fa-facebook-official {
+  top: 75%;
+}
+
+@media screen and (max-width: 815px) {
+  i.fa {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .scrollDown {
+    display: none;
+  }
+}

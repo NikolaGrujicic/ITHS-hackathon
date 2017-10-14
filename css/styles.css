@@ -1,0 +1,69 @@
+.form-group{
+  margin-bottom:25px;
+}
+
+textarea.form-control{
+  height:236px;
+}
+
+.form-control{
+  display:block;
+  width:100%;
+  height:auto;
+  padding:20px;
+  font-size:1.55rem;
+  line-height:1.25;
+  color:#E4022E;
+  background-color:#fff;
+  background-image:none;
+  font-size: 20px;
+  border-radius:.25rem;
+  -webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.form-control:focus,
+.form-control:active {
+  border:1px solid #e4022e;
+  -webkit-box-shadow:inset 0 1px 1px rgba(#e4022e, 0.32);
+  box-shadow:inset 0 1px 1px rgba(#e4022e, 0.32);
+}
+
+h2.text-danger.section-heading{
+  font-size:40px;
+  margin-bottom:15px;
+  margin-top:0;
+  color:#fff;
+}
+
+h3.section-subheading.text-muted{
+  font-size:15px;
+  font-weight:400;
+  font-style:italic;
+  margin-bottom:75px;
+  text-transform:none;
+  font-family:'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.btn.send-mail {
+  background-color: #e4022e;
+  font-size: 23px;
+  color: white;
+  transition: 0.4 all;
+  padding: 15px;
+}
+
+.btn.send-mail:hover,
+.btn.send-mail:active {
+  background-color: #fff;
+  color: #e4022e;
+  font-size: 23px;
+}
+
+.mail {
+  position: relative;
+  top: 100vh;
+  background-color: #0d0d0d;
+  padding: 20px;
+}
