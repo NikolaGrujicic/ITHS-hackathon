@@ -183,7 +183,18 @@ img.scrollDown {
 @keyframes fadeInUpBig {
   from {
     opacity: 0;
-    transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 300px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 800px, 0);
   }
   to {
     opacity: 1;
@@ -193,7 +204,13 @@ img.scrollDown {
 
 .fadeInUpBig {
   animation-name: fadeInUpBig;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+img.fadeInUpBig {
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
   animation-fill-mode: both;
 }
 
@@ -221,6 +238,18 @@ img.scrollDown {
   }
 }
 
+
+@keyframes fadeInSocial {
+  from {
+    opacity: 0;
+    transform: translate3d(-200px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 i.fa {
   font-size: 40px;
   color: white;
@@ -228,6 +257,8 @@ i.fa {
   position: absolute;
   left: 3%;
   transition: 0.3s all;
+  animation-name: fadeInSocial;
+  animation-fill-mode: both;
 }
 
 i.fa:hover {
@@ -236,14 +267,17 @@ i.fa:hover {
 
 i.fa.fa-twitter {
   top: 90%;
+  animation-duration: 2.3s;
 }
 
 i.fa.fa-youtube {
   top: 82.5%;
+  animation-duration: 1.9s;
 }
 
 i.fa.fa-facebook-official {
   top: 75%;
+  animation-duration: 1.5s;
 }
 
 @media screen and (max-width: 815px) {
