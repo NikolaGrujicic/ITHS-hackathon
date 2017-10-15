@@ -22,11 +22,14 @@ nav.navbar.navbar-default.navbar-fixed-top {
   color: #0D0D0D;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-  border-radius: 30px;
-  box-sizing: border-box;
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
   color: #E4032E;
-  background: none;
+  background-color: transparent;
+ }
+
+.navbar-default .navbar-nav > li > a.active-section {
+  color: #E4032E;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
