@@ -14,7 +14,7 @@ textarea.form-control{
   font-size:1.55rem;
   line-height:1.25;
   color:#E4022E;
-  background-color:#fff;
+  background-color: rgba(255, 255, 255, 0.79);
   background-image:none;
   font-size: 20px;
   border-radius:.25rem;
@@ -27,7 +27,7 @@ textarea.form-control{
 .form-control:active,
 textarea.form-control:focus,
 textarea.form-control:active {
-  background: white no-repeat;
+  background: rgba(255, 255, 255, 0.79) no-repeat;
   box-shadow: inset 0 1px 1px rgba(228, 2, 46, 0.79),0 0 11px rgba(228, 2, 46, 0.75);
   border: solid 1px #e4022e;
   outline: 0 none;
@@ -43,6 +43,20 @@ h2.text-danger.section-heading{
   margin-top:0;
   color:#fff;
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #e4022e;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #e4022e;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #e4022e;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #e4022e;
+}
+
 
 h3.section-subheading.text-muted{
   font-size:15px;
@@ -74,7 +88,8 @@ h3.section-subheading.text-muted{
 .mail {
   position: relative;
   top: 100vh;
-  background: linear-gradient(120deg, #0d0d0d 40%, #e4022e 130%);
+  background: linear-gradient(120deg, rgba(13, 13, 13, 0.72) 40%, rgba(228, 2, 46, 0.7) 130%);
+  /*background: linear-gradient(120deg, #0d0d0d 40%, #e4022e 130%);*/
   /*background-color: #0d0d0d;*/
   padding: 20px 43px;
   border-radius:.25rem;

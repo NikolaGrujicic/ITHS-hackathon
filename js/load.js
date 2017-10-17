@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
   $(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
+    if ($(document).scrollTop() > 90) {
       //klasa za neprovidan nav
       $('.navbar').css('background-color', '#fff');
     } else {
       //klasa za providan nav
+      $('.navbar').css('background-color', 'transparent');
     }
 
   });
