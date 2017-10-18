@@ -13,10 +13,6 @@ body {
   height: 100%;
 }
 
-img.frontal {
-
-}
-
 h2 {
   font-size: 32px;
   color: white;
@@ -51,10 +47,12 @@ nav.navbar.navbar-default.navbar-fixed-top {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border: none;
   z-index: 1900;
+
 }
 
 .navbar-default .navbar-toggle {
   background-color: #0d0d0d;
+  margin-top: 15px;
 }
 
 ul.nav.navbar-nav {
@@ -74,6 +72,7 @@ img.img-responsive {
   height: auto;
   max-width: 100%;
   width: 100%;
+
 }
 
 img.img-responsive.img-bot {
@@ -82,7 +81,7 @@ img.img-responsive.img-bot {
 }
 
 img.img-responsive.overlay {
-  min-height: 80%;
+  min-height: 100%;
   position: absolute;
   top: 0;
   width: 100vw;
@@ -154,7 +153,7 @@ div.jumbotron {
   z-index:-11;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 768px) {
   img.img-responsive.overlay {
     min-height: 80%;
     /*position: absolute;*/
@@ -166,6 +165,13 @@ div.jumbotron {
   nav.navbar.navbar-default.navbar-fixed-top {
     padding-bottom: 20px;
   }
+
+  /*.jumbotron .flip-clock-wrapper {
+    width: 343px;
+  }*/
+
+
+
 }
 
 span.iths-name {

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,6 +10,8 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="FlipClock-master/compiled/flipclock.css">
+  <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="fonts/font-awesome.min.css">
 </head>
 
@@ -31,11 +34,13 @@
   <div class="container">
     <div class="jumbotron fadeInUpBig">
       <h1 class="text-center"> <span>IT </span><span class="iths-name">HS </span><span>Hakaton </span></h1>
-      <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+      <div class="flip-clock"></div>
+      <!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p> -->
       <a class="btn btn-default" role="button" href="#">Saznaj više</a>
     </div>
     <a href="#"><img src="img/scroll-down.png" class="scrollDown"></a>
     <div class="row section mail" id="mail">
+
       <h2>Pošaljite nam mejl sa pitanjima</h2>
       <div class="col-md-12">
         <form class="mail-forma" method="post">
@@ -66,7 +71,7 @@
       </div>
     </div>
   </div>
-  <img class="img-responsive overlay fadeInUpBig" src="img/HackathonPlane.png">
+  <img class="img-responsive overlay fadeInUpBig" src="img/Hackathon.png">
   <!-- <div class="social-icons">
   </div> -->
   <a href="https://twitter.com/iths_beograd"><i class="fa fa-twitter"></i></a>
@@ -78,6 +83,8 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/load.js"></script>
   <script src="js/mailValidacija.js"></script>
+  <script src="FlipClock-master/compiled/flipclock.min.js"></script>
+  <script src="js/flipclock-implement.js"></script>
 </body>
 
 </html>
