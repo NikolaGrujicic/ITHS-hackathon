@@ -44,29 +44,6 @@ h2.text-danger.section-heading{
   color:#fff;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #e4022e;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: #e4022e;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: #e4022e;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: #e4022e;
-}
-
-
-h3.section-subheading.text-muted{
-  font-size:15px;
-  font-weight:400;
-  font-style:italic;
-  margin-bottom:75px;
-  text-transform:none;
-  font-family:'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
-}
-
 .btn.send-mail {
   background-color: #0d0d0d;
   font-size: 24px;
@@ -74,7 +51,6 @@ h3.section-subheading.text-muted{
   border: none;
   border-radius:.25rem;
   padding: 12px 24px;
-  margin-top: 25px;
   transition: all 0.3s;
 }
 
@@ -89,8 +65,6 @@ h3.section-subheading.text-muted{
   position: relative;
   top: 100vh;
   background: linear-gradient(120deg, rgba(13, 13, 13, 0.72) 40%, rgba(228, 2, 46, 0.7) 130%);
-  /*background: linear-gradient(120deg, #0d0d0d 40%, #e4022e 130%);*/
-  /*background-color: #0d0d0d;*/
   padding: 20px 43px;
   border-radius:.25rem;
 }
