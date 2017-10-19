@@ -11,7 +11,7 @@
   .landing-wrapper {
     min-height: 100vh;
     height: auto;
-    border: solid 3px black;
+    border: solid 0px black;
   }
 
   div.container-landing {
@@ -94,6 +94,7 @@
     min-width: 100vw;
     z-index: -10;
     transition: 0.2s all;
+
   }
 
   li {
@@ -305,3 +306,34 @@
       display: none;
     }
   }
+
+
+
+
+
+
+  /*Div section about*/
+#about{
+  color:#000;
+  margin-top: -200px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+
+  #about-row{
+    margin-top: 145px;
+    height:500px;
+    background-color: #fff;
+    text-align: left;
+  }
+  #about-content{
+
+  }
+  #list-about{
+    padding-top: 30px;
+    list-style-type: disc;
+  }
+
+
+  /*Div section about*/
