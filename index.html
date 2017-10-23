@@ -24,8 +24,8 @@
       <div class="collapse navbar-collapse" id="navcol-1">
         <ul class="nav navbar-nav">
           <li role="presentation"><a class="text-uppercase navbar-item" href="#">Prijava</a></li>
-          <li role="presentation"><a class="text-uppercase navbar-item" href="#about">O hakatonu</a></li>
-          <li role="presentation"><a class="text-uppercase navbar-item" href="#kontakt">Kontakt </a></li>
+          <li role="presentation"><a class="text-uppercase navbar-item" href="#about-row">O hakatonu</a></li>
+          <li role="presentation"><a class="text-uppercase navbar-item" href="#mail">Kontakt </a></li>
         </ul>
       </div>
     </div>
@@ -37,73 +37,94 @@
           <span>IT</span><span class="iths-name">HS</span><span> Hakaton</span>
         </h1>
         <div class="flip-clock"></div>
-        <a class="btn btn-default" role="button" href="#">Saznaj više</a>
+        <a class="btn btn-default saznaj-vise" href="#">Saznaj više</a>
       </div>
     </div>
+    <a href="#about-row" class="scrollDown-link"><img src="img/scroll-down.png" class="scrollDown"></a>
     <img class="img-responsive overlay fadeInUpBig" src="img/Hackathon.png" />
-    <a href="#"><img src="img/scroll-down.png" class="scrollDown"></a>
+    
+    <a href="https://twitter.com/iths_beograd"><i class="fa fa-twitter"></i></a>
+  	<a href="https://www.youtube.com/channel/UCkABrAx_GvRTGEdLS0A4OCA"><i class="fa fa-youtube"></i></a>
+  	<a href="https://sr-rs.facebook.com/ITHSBeograd/"><i class="fa fa-facebook-official"></i></a>
+    
   </div>
 
-  <div class="container-content">
-    <h2 class="text-center" id="about">Sta je IT<span class="iths-name">HS</span> Hackathon?</h1>
-
-
-    <div class="row" id="about-row">
+  <div class="container container-content">
+    <div class="row section" id="about-row">
+      <h2 class="text-center" id="about">Sta je IT<span class="iths-name">HS</span> Hackathon?</h1>
       <div class="col-md-12" id="about-content">
-        <div class="container">
-          <ul id="list-about">
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
-          </ul>
-        </div>
+      <div class="container">
+        <ul id="list-about">
+          <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
+          <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
+          <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
+          <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
+          <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
+        </ul>
       </div>
-
+      </div>
     </div>
-    <div class="row section"></div>
-    <div class="row section"></div>
-  </div>
 
-  <div class="row section mail" id="mail">
-    <h2>Pošaljite nam mejl sa pitanjima</h2>
-    <div class="col-md-12">
-      <form class="mail-forma" method="post">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input class="form-control" type="text" placeholder="Ime">
+    <div class="row section" id="map">
+      <div class="col-md-12" id="about-content">
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <div class="row section" ></div>
+
+    <div class="row section mail" id="mail">
+      <h2>Pošaljite nam mejl sa pitanjima</h2>
+      <div class="col-md-12">
+        <form class="mail-forma" method="post">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Ime">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Mejl adresa">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Broj telefona">
+              </div>
             </div>
-            <div class="form-group">
-              <input class="form-control" type="text" placeholder="Mejl adresa">
+            <div class="col-md-6">
+              <div class="form-group error">
+                <textarea class="form-control" placeholder="Napišite poruku" spellcheck="false"></textarea>
+              </div>
             </div>
-            <div class="form-group">
-              <input class="form-control" type="text" placeholder="Broj telefona">
+            <div class="col-lg-12 col-md-12 text-center">
+              <div>
+                <button class="btn btn-lg send-mail" type="submit"><strong>Pošalji</strong></button>
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="form-group error">
-              <textarea class="form-control" placeholder="Napišite poruku" spellcheck="false"></textarea>
-            </div>
-          </div>
-          <div class="col-lg-12 col-md-12 text-center">
-            <div>
-              <button class="btn btn-lg send-mail" type="submit"><strong>Pošalji</strong></button>
-            </div>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
 
   <!-- <img class="img-responsive overlay fadeInUpBig" src="img/Hackathon.png"> -->
 
-  <a href="https://twitter.com/iths_beograd"><i class="fa fa-twitter"></i></a>
-  <a href="https://www.youtube.com/channel/UCkABrAx_GvRTGEdLS0A4OCA"><i class="fa fa-youtube"></i></a>
-  <a href="https://sr-rs.facebook.com/ITHSBeograd/"><i class="fa fa-facebook-official"></i></a>
+  
+
+  <!-- <script>
+    var map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: -34.397,
+          lng: 150.644
+        },
+        zoom: 8
+      });
+    }
+  </script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0O0cMyoWm8dOPu-Zu9raWNAocKINj2FY&callback=initMap">
+  </script> -->
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>

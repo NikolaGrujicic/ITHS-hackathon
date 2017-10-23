@@ -1,33 +1,36 @@
-  html {
+  html, body {
     height: 100%;
   }
 
   body {
     background: url(../img/front.png) no-repeat center center fixed;
     background-size: cover;
-    height: 100%;
   }
 
   .landing-wrapper {
-    min-height: 100vh;
+    min-height: 90vh;
+    max-height: 90vh;
     height: auto;
-    border: solid 0px black;
+	position: relative;
+    /*border: solid 1px black;*/
+  }
+
+  div.container {
+    min-width: 100%;
   }
 
   div.container-landing {
-    z-index: 5000;
     margin-top: 100px;
   }
 
   div.container-content {
-    z-index: 5000;
     background-color: transparent;
     height: auto;
+    /*position: absolute;*/
   }
 
   .row.section {
-    border: solid 2px black;
-
+    /*border: solid 2px black;*/
   }
 
   h2 {
@@ -77,24 +80,25 @@
   .in {
     margin: 0px 20px;
     background-color: #fff;
-    border: solid 1px black;
+    /*border: solid 1px black;*/
     text-align: center;
     z-index: 1900;
   }
 
   img.img-responsive {
     display: block;
-    height: auto;
-    max-width: 100%;
   }
 
   img.img-responsive.overlay {
-    min-height: 100%;
-    position: relative;
-    min-width: 100vw;
-    z-index: -10;
+	/*height: 100vh;*/
+    position: absolute;
+	pointer-events: none;
+	bottom:0;
+    /*top: 0;*/
     transition: 0.2s all;
-
+    width: 100%;
+    z-index: 200;
+	  
   }
 
   li {
@@ -123,21 +127,21 @@
     font-weight: 400;
   }
 
-  button.btn.btn-default {
-    position: absolute;
-    z-index: 2000;
-    color: white;
-  }
-
   div.col-md-12 {
     text-align: center;
   }
 
+  div.jumbotron {
+    background-color: rgba(255, 255, 255, 0.43);
+    text-align: center;
+    height: auto;
+    width: 60%;
+    border-radius: 0.25em;
+    margin: 0 auto;
+  }
+
   a.btn.btn-default {
     margin-top: 55px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 2000;
     cursor: pointer;
     transition: 0.3s all;
   }
@@ -147,31 +151,30 @@
     font-size: 18px;
   }
 
-  div.jumbotron {
-    background-color: rgba(255, 255, 255, 0.43);
-    padding-bottom: 60px;
-    text-align: center;
-    height: auto;
-    z-index: -11;
+/*
+  .saznaj-vise{
+	z-index: 9999;
+	position: absolute;
+	transform: translate(-50%,-50%);
   }
+*/
 
   @media screen and (max-width: 768px) {
-    img.img-responsive.overlay {
-      /*min-height: 80%;*/
-      /*position: absolute;*/
-      /*top: 100px;*/
-      height: 200px;
-    }
     .navbar-brand img {
       height: 40px
     }
     nav.navbar.navbar-default.navbar-fixed-top {
       padding-bottom: 20px;
-      /*background-color: white;*/
     }
-    /*.jumbotron .flip-clock-wrapper {
-    width: 343px;
-  }*/
+  }
+
+  @media screen and (max-width: 475px) {
+    nav.navbar.navbar-default.navbar-fixed-top {
+      padding: 0px 1px;
+    }
+    div.container-landing {
+      margin-top: 50px;
+    }
   }
 
   span.iths-name {
@@ -185,7 +188,7 @@
   img.scrollDown {
     height: 50px;
     border-radius: 30px;
-    padding: 5px;
+    padding: 6px;
     z-index: 1900;
     position: absolute;
     top: 90%;
@@ -306,34 +309,26 @@
       display: none;
     }
   }
-
-
-
-
-
-
   /*Div section about*/
-#about{
-  color:#000;
-  margin-top: -200px;
-  font-size: 50px;
-  font-weight: 900;
-}
 
+  #about {
+    color: #000;
+    font-size: 50px;
+    font-weight: 600;
+    z-index: 500;
+  }
 
-  #about-row{
-    margin-top: 145px;
-    height:500px;
+  #about-row {
+    height: auto;
     background-color: #fff;
     text-align: left;
+    padding-bottom: 70px;
+    /*margin-top: 42px;*/
   }
-  #about-content{
 
-  }
-  #list-about{
+  #about-content {}
+
+  #list-about {
     padding-top: 30px;
-    list-style-type: disc;
+    list-style-type: none;
   }
-
-
-  /*Div section about*/
