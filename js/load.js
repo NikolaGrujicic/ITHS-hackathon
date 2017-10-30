@@ -1,15 +1,31 @@
 $(document).ready(function() {
-  var navHeight = $('nav').height() - 1;
+  var windowWidth;
+  var windowHeight;
 
-  // var overlayBottomPos = $('img.overlay').height();
-  // $('.container-content').css({'top':overlayBottomPos});
-  //
-  // $( window ).resize(function() {
-  //   var overlayBottomPos = $('img.overlay').height();
-  //   $('.container-content').css({'top':overlayBottomPos});
-  // });
-  //
-  // console.log($('.container-content').offset().top);
+  function checkRatio() {
+    windowWidth = $(window).width();
+    windowHeight = $(window).height();
+
+    if (windowWidth > windowHeight) {
+      $('.overlay').attr('src', 'img/siriSaBelimDelom.png').css('bottom','-250px');
+      $('#about-row').css('margin-top','250px');
+      console.log('siri sam');
+    }
+    else {
+      $('.overlay').attr('src', 'img/Hackathon.png').css('bottom','-2px');
+      $('#about-row').css('margin-top','-2px');
+      console.log('visi sam');
+    }
+  }
+  checkRatio();
+  console.log('width: ' + windowWidth + 'px | height: ' + windowHeight + 'px');
+
+
+  $(window).resize(function() {
+    checkRatio();
+  });
+
+  var navHeight = $('nav').height() - 1;
 
   $(window).scroll(function() {
     if ($(document).scrollTop() > 90) {
@@ -19,7 +35,6 @@ $(document).ready(function() {
       //klasa za providan nav
       $('.navbar').css('background-color', 'transparent');
     }
-
   });
 
   $('.nav a[href*=\\#]').on('click', function(event) {
