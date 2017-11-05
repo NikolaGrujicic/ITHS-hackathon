@@ -7,55 +7,36 @@ $(document).ready(function() {
     windowHeight = $(window).height();
 
     if (windowWidth > windowHeight) {
-      $('.overlay').attr('src', 'img/siriSaBelimDelom.png').css('bottom','-250px');
-      $('#about-row').css('margin-top','250px');
-      console.log('siri sam');
-    }
-    else {
-      $('.overlay').attr('src', 'img/Hackathon.png').css('bottom','-2px');
-      $('#about-row').css('margin-top','-2px');
-      console.log('visi sam');
+      $('.overlay').attr('src', 'img/HackathonX.png').css('bottom', '-250px');
+      $('#about-row').css('margin-top', '250px');
+    } else {
+      $('.overlay').attr('src', 'img/HackathonY.png').css('bottom', '-2px');
+      $('#about-row').css('margin-top', '-2px');
     }
   }
   checkRatio();
-  console.log('width: ' + windowWidth + 'px | height: ' + windowHeight + 'px');
-
 
   $(window).resize(function() {
     checkRatio();
   });
 
+  if ($(document).scrollTop() > 90) {
+    $('.navbar').css('background-color', '#fff');
+  }
+
   var navHeight = $('nav').height() - 1;
 
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 90) {
-      //klasa za neprovidan nav
-      $('.navbar').css('background-color', '#fff');
-    } else {
-      //klasa za providan nav
-      $('.navbar').css('background-color', 'transparent');
-    }
-  });
-
-  $('.nav a[href*=\\#]').on('click', function(event) {
-    event.preventDefault();
-    $('html,body').animate({
-      scrollTop: $(this.hash).offset().top - navHeight + 1
-    }, 700);
-  });
-
-  $('.scrollDown-link').on('click', function(event) {
-    event.preventDefault();
-    $('html,body').animate({
-      scrollTop: $(this.hash).offset().top - navHeight + 1
-    }, 700);
-  });
-
-  // $sections incleudes all of the container divs that relate to menu items.
+  // $sections includes all of the container divs that relate to menu items.
   var $sections = $('.section');
   var $currentSection;
 
   $(window).scroll(function() {
+    if ($(document).scrollTop() > 90) {
+      $('.navbar').css('background-color', '#fff');
+    } else {
+      $('.navbar').css('background-color', 'transparent');
+    }
+
     // currentScroll is the number of pixels the window has been scrolled
     var currentScroll = $(this).scrollTop();
     // $currentSection is somewhere to place the section we must be looking at
@@ -75,11 +56,27 @@ $(document).ready(function() {
         // This is the bit of code that uses the currentSection as its source of ID
         var id = $currentSection.attr('id');
         $('li > a.navbar-item').removeClass('active-section');
-        $("li > a[href=#" + id + "]").addClass('active-section');
+        $('li > a[href=#' + id + ']').addClass('active-section');
       }
       if (currentScroll + navHeight < $('.section:first-child').offset().top) {
         $('li > a.navbar-item').removeClass('active-section');
       }
     });
+  });
+
+  //scroll down na klik nav itema
+  $('.nav a[href*=\\#]').on('click', function(event) {
+    event.preventDefault();
+    $('html,body').animate({
+      scrollTop: $(this.hash).offset().top - navHeight + 1
+    }, 700);
+  });
+
+  //scroll down na klik scrollDown buttona
+  $('.scrollDown-link').on('click', function(event) {
+    event.preventDefault();
+    $('html,body').animate({
+      scrollTop: $(this.hash).offset().top - navHeight + 1
+    }, 700);
   });
 });
