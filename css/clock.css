@@ -1,8 +1,6 @@
 #del-countdown{
     width: 600px;
-    margin:  15% auto;
-    margin-top:5% !important;
-    margin-bottom: 8% !important;
+    margin: 5% auto;
   }
   #clock span{
     float: left;

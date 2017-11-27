@@ -141,17 +141,25 @@
     height: auto;
     border-radius: 0.25em;
     margin: 0 auto;
+    padding: 10px 20px;
+  }
+
+  #del-countdown {
+    margin: 5% auto;
   }
 
   a.btn.btn-default {
-    margin-top: 55px;
+    max-width: 10%;
+    display: block;
+    margin: 7% auto 5%;
     cursor: pointer;
+    padding: 15px;
     transition: 0.3s all;
   }
 
   a.btn.btn-default:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 10px 0 rgba(0, 0, 0, 0.19);
-    font-size: 18px;
+    transform: scale(1.2);
   }
 
   label.error {
@@ -176,6 +184,9 @@
     div.container-landing {
       margin-top: 50px;
     }
+    .row.section.mail {
+      padding: 20px 0;
+    }
   }
 
   span.iths-name {
@@ -192,15 +203,13 @@
     padding: 6px;
     z-index: 1900;
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
     background-color: #0d0d0d;
     transform: translate(-50%, -50%);
     animation: animate-scroll 2s infinite;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 10px 0 rgba(0, 0, 0, 0.19);
   }
-
-
 
   .fadeInUpBig {
     animation-name: fadeInUpBig;
@@ -281,7 +290,7 @@
   }
 
   #map {
-    height: 400px;
+    height: 533px ;
     width: 100%;
     overflow: visible;
     position: relative;

@@ -51,8 +51,9 @@ h2.text-danger.section-heading{
   border: none;
   border-radius:.25rem;
   padding: 12px 24px;
+  margin: 20px auto;
+  width: 100%;
   transition: all 0.4s;
-  margin: 35px auto;
 }
 
 .btn.send-mail:hover,

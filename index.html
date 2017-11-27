@@ -23,11 +23,7 @@
         <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
       </div>
       <div class="collapse navbar-collapse" id="navcol-1">
-        <ul class="nav navbar-nav">
-          <li role="presentation"><a class="text-uppercase navbar-item" href="#">Prijava</a></li>
-          <li role="presentation"><a class="text-uppercase navbar-item" href="#about-row">O hakatonu</a></li>
-          <li role="presentation"><a class="text-uppercase navbar-item" href="#mail">Kontakt </a></li>
-        </ul>
+        <ul class="nav navbar-nav"><li role="presentation"><a class="text-uppercase navbar-item" href="#">Prijava</a></li><li role="presentation"><a class="text-uppercase navbar-item" href="#about-row">O hakatonu</a></li><li role="presentation"><a class="text-uppercase navbar-item" href="#mail">Kontakt </a></li></ul>
       </div>
     </div>
   </nav>
@@ -98,7 +94,7 @@
         <h3>Pošaljite nam mail sa pitanjima</h3>
         <form class="mail-forma" method="post">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 col-sm-12">
               <div class="form-group">
                 <input name="mail" class="form-control" type="email" placeholder="Mail adresa">
               </div>
@@ -106,15 +102,13 @@
                 <input name="naslov" class="form-control" type="text" placeholder="Naslov poruke">
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-sm-12">
               <div class="form-group error">
                 <textarea name="sadrzaj" class="form-control" placeholder="Napišite poruku" spellcheck="false"></textarea>
               </div>
             </div>
             <div class="col-lg-12 col-md-12 text-center">
-              <div>
-                <button class="btn btn-lg send-mail" type="submit"><strong>Pošalji</strong></button>
-              </div>
+              <button class="btn btn-lg send-mail col-md-12" type="submit"><strong>Pošalji</strong></button>
             </div>
           </div>
         </form>
