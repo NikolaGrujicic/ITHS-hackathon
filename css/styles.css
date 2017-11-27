@@ -28,8 +28,8 @@ textarea.form-control{
 textarea.form-control:focus,
 textarea.form-control:active {
   background: rgba(255, 255, 255, 0.79) no-repeat;
-  box-shadow: inset 0 1px 1px rgba(228, 2, 46, 0.79),0 0 11px rgba(228, 2, 46, 0.75);
-  border: solid 1px #e4022e;
+  box-shadow: inset 0 1px 3px rgba(228, 2, 46, 0.79),0 0 15px rgba(228, 2, 46, 0.75);
+  border: solid 0.5px #e4022e;
   outline: 0 none;
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   /*background-image: linear-gradient(to bottom, #0d0d0d, #0d0d0d), linear-gradient(to bottom, #757575, #757575);
@@ -51,14 +51,15 @@ h2.text-danger.section-heading{
   border: none;
   border-radius:.25rem;
   padding: 12px 24px;
-  transition: all 0.3s;
+  transition: all 0.4s;
+  margin: 35px auto;
 }
 
 .btn.send-mail:hover,
 .btn.send-mail:active {
   background-color: #fff;
   color: #e4022e;
-  font-size: 26px;
+  transform: scale(1.05);
 }
 
 .mail {

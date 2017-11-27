@@ -1,0 +1,125 @@
+#del-countdown{
+    width: 600px;
+    margin:  15% auto;
+    margin-top:5% !important;
+    margin-bottom: 8% !important;
+  }
+  #clock span{
+    float: left;
+    text-align: center;
+    font-size: 64px;
+    margin: 0 2.5%;
+    color: #fafafa;
+    opacity: 3;
+    padding: 20px;
+    width: 20%;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+  }
+  #clock span:nth-child(1){
+    background: #0d0d0d;
+    opacity: 0.75;
+  }
+  #clock span:nth-child(2){
+    background: #0d0d0d;
+    opacity: 0.75;
+  }
+  #clock span:nth-child(3){
+    background: #0d0d0d;
+    opacity: 0.75;
+  }
+  #clock span:nth-child(4){
+    background: #0d0d0d;
+    opacity: 0.75;
+  }
+  #clock:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #units span{
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: 20px;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+  }
+
+  span.turn{
+    animation: turn 0.9s ease forwards;
+  }
+
+  @keyframes turn{
+    0%{transform: rotateX(0deg)}
+    100%{transform: rotateX(360deg)}
+  }
+
+  @media screen and (max-width: 768px) {
+    #clock span{
+      float: left;
+      text-align: center;
+      font-size: 38px;
+      margin: 0 2.5%;
+      color: #fafafa;
+      padding: 15px;
+      width: 20%;
+      border-radius: 0.25em;
+      box-sizing: border-box;
+    }
+
+    #del-countdown{
+      width: 400px;
+      margin:  15% auto;
+      margin-top:10% !important;
+      margin-bottom: 10% !important;
+    }
+
+    #units span{
+      float: left;
+      width: 25%;
+      text-align: center;
+      margin-top: 20px;
+      color: #fafafa;
+      text-transform: uppercase;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+  }
+
+  @media screen and (max-width: 468px) {
+    #clock span{
+      float: left;
+      text-align: center;
+      font-size: 24px;
+      margin: 0 2.5%;
+      color: #fafafa;
+      padding: 15px;
+      width: 20%;
+      border-radius: 0.25em;
+      box-sizing: border-box;
+    }
+
+    #del-countdown{
+      width: 260px;
+      margin:  15% auto;
+      margin-top:10% !important;
+      margin-bottom: 10% !important;
+    }
+
+    #units span{
+      float: left;
+      width: 25%;
+      text-align: center;
+      margin-top: 20px;
+      color: #fafafa;
+      text-transform: uppercase;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+  }
