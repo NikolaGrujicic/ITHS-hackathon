@@ -42,8 +42,6 @@ $(document).ready(function () {
         clearInterval(timerInterval);
         clock.innerHTML = '<span>0</span><span>0</span><span>0</span><span>0</span>';
       }
-
-
     }, 1000);
   }
 });

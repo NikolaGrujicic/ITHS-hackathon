@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $('.mail-forma').validate( {
     rules: {
-      //inputname: { pravila }
       mail: {
         required: true,
         email: true,
@@ -20,7 +19,6 @@ $(document).ready(function() {
       }
     },
     messages: {
-      //inputname: { poruke za pravila }
       mail: {
         required: "Polje mail je obavezno",
         minlength: "Morate uneti najmanje 7 karaktera",

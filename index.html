@@ -23,7 +23,11 @@
         <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
       </div>
       <div class="collapse navbar-collapse" id="navcol-1">
-        <ul class="nav navbar-nav"><li role="presentation"><a class="text-uppercase navbar-item" href="#">Prijava</a></li><li role="presentation"><a class="text-uppercase navbar-item" href="#about-row">O hakatonu</a></li><li role="presentation"><a class="text-uppercase navbar-item" href="#mail">Kontakt </a></li></ul>
+        <ul class="nav navbar-nav">
+          <li role="presentation"><a class="text-uppercase navbar-item" href="#about-row">O hakatonu</a></li>
+          <li role="presentation"><a class="text-uppercase navbar-item" href="#mail">Kontakt </a></li>
+          <li role="presentation"><a class="text-uppercase navbar-item" href="#" data-toggle="modal" data-target="#prijava-modal">Prijava</a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -43,7 +47,7 @@
             <span>Sekundi</span>
           </div>
         </div>
-        <a class="btn btn-default saznaj-vise" href="#">Saznaj više</a>
+        <a class="btn btn-default saznaj-vise" href="#about-row">Saznaj više</a>
       </div>
     </div>
     <a href="#about-row" class="scrollDown-link"><img src="img/scroll-down.png" class="scrollDown"></a>
@@ -88,39 +92,60 @@
       <div class="row">
         <div class="col-md-12">
           <h2>Kontakt informacije</h2>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <h3>Pošaljite nam mail sa pitanjima</h3>
+    <form class="mail-forma" method="post">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="form-group">
+            <input name="mail" class="form-control" type="email" placeholder="Mail adresa">
+          </div>
+          <div class="form-group">
+            <input name="naslov" class="form-control" type="text" placeholder="Naslov poruke">
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <div class="form-group error">
+            <textarea name="sadrzaj" class="form-control" placeholder="Napišite poruku" spellcheck="false"></textarea>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 text-center">
+          <input class="btn btn-lg send-mail col-md-12" name="posalji" type="submit" value="Pošalji">
         </div>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <h3>Pošaljite nam mail sa pitanjima</h3>
-        <form class="mail-forma" method="post">
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <div class="form-group">
-                <input name="mail" class="form-control" type="email" placeholder="Mail adresa">
-              </div>
-              <div class="form-group">
-                <input name="naslov" class="form-control" type="text" placeholder="Naslov poruke">
-              </div>
-            </div>
-            <div class="col-md-12 col-sm-12">
-              <div class="form-group error">
-                <textarea name="sadrzaj" class="form-control" placeholder="Napišite poruku" spellcheck="false"></textarea>
-              </div>
-            </div>
-            <div class="col-lg-12 col-md-12 text-center">
-              <button class="btn btn-lg send-mail col-md-12" type="submit"><strong>Pošalji</strong></button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <h3>Naša lokacija</h3>
-        <div id="map"></div>
-      </div>
-    </div>
-    <div class="row section" id="mapa">
+    </form>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <h3>Naša lokacija</h3>
+    <div id="map"></div>
+  </div>
+  </div>
+  <div class="row section" id="mapa">
 
+  </div>
+
+  <div class="modal fade" id="prijava-modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Prijava</h4>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLVi7jV5C7ABpvk6udOW1iN4RpIgwSlMqOSHsFYDkDALZ7kg/viewform?embedded=true" width="500" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Potvrdi</button> -->
+          <button type="button" class="btn btn-default" data-dismiss="modal">Odustani</button>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+  </div>
   </div>
 
   <script src="js/jquery.min.js"></script>
@@ -131,172 +156,8 @@
   <script src="js/mailValidacija.js"></script>
   <script src="js/flipclock-implement.js"></script>
   <script src="js/countdown.js"></script>
-  <script>
-    function initMap() {
-      // Styles a map in night mode.
-      var map = new google.maps.Map(document.getElementById('map'), {
-        center: {
-          lat: 44.7866,
-          lng: 20.4489
-        },
-        zoom: 13,
-        styles: [{
-            "elementType": "geometry",
-            "stylers": [{
-              "color": "#212121"
-            }]
-          },
-          {
-            "elementType": "labels.icon",
-            "stylers": [{
-              "visibility": "off"
-            }]
-          },
-          {
-            "elementType": "labels.text.fill",
-            "stylers": [{
-              "color": "#757575"
-            }]
-          },
-          {
-            "elementType": "labels.text.stroke",
-            "stylers": [{
-              "color": "#212121"
-            }]
-          },
-          {
-            "featureType": "administrative",
-            "elementType": "geometry",
-            "stylers": [{
-              "color": "#757575"
-            }]
-          },
-          {
-            "featureType": "administrative.country",
-            "elementType": "labels.text.fill",
-            "stylers": [{
-              "color": "#9e9e9e"
-            }]
-          },
-          {
-            "featureType": "administrative.land_parcel",
-            "stylers": [{
-              "visibility": "off"
-            }]
-          },
-          {
-            "featureType": "administrative.locality",
-            "elementType": "labels.text.fill",
-            "stylers": [{
-              "color": "#bdbdbd"
-            }]
-          },
-          {
-            "featureType": "poi",
-            "elementType": "labels.text.fill",
-            "stylers": [{
-              "color": "#757575"
-            }]
-          },
-          {
-            "featureType": "poi.park",
-            "elementType": "geometry",
-            "stylers": [{
-              "color": "#181818"
-            }]
-          },
-          {
-            "featureType": "poi.park",
-            "elementType": "labels.text.fill",
-            "stylers": [{
-              "color": "#616161"
-            }]
-          },
-          {
-            "featureType": "poi.park",
-            "elementType": "labels.text.stroke",
-            "stylers": [{
-              "color": "#1b1b1b"
-            }]
-          },
-          {
-            "featureType": "road",
-            "elementType": "geometry.fill",
-            "stylers": [{
-              "color": "#2c2c2c"
-            }]
-          },
-          {
-            "featureType": "road",
-            "elementType": "labels.text.fill",
-            "stylers": [{
-              "color": "#8a8a8a"
-            }]
-          },
-          {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
-            "stylers": [{
-              "color": "#373737"
-            }]
-          },
-          {
-            "featureType": "road.highway",
-            "elementType": "geometry",
-            "stylers": [{
-              "color": "#3c3c3c"
-            }]
-          },
-          {
-            "featureType": "road.highway.controlled_access",
-            "elementType": "geometry",
-            "stylers": [{
-              "color": "#4e4e4e"
-            }]
-          },
-          {
-            "featureType": "road.local",
-            "elementType": "labels.text.fill",
-            "stylers": [{
-              "color": "#616161"
-            }]
-          },
-          {
-            "featureType": "transit",
-            "elementType": "labels.text.fill",
-            "stylers": [{
-              "color": "#757575"
-            }]
-          },
-          {
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [{
-              "color": "#000000"
-            }]
-          },
-          {
-            "featureType": "water",
-            "elementType": "labels.text.fill",
-            "stylers": [{
-              "color": "#3d3d3d"
-            }]
-          }
-        ]
-      });
-      var marker = new google.maps.Marker({
-        position: {
-          lat: 44.801842,
-          lng: 20.419488
-        },
-        map: map,
-        icon: ''
-      });
-    }
-  </script>
-
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXvqe1EWGwhoR9txX3YmMWjmL7nuXobE&callback=initMap"></script>
-
+  <script src="js/initMap.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXvqe1EWGwhoR9txX3YmMWjmL7nuXobE"></script>
 </body>
 
 </html>

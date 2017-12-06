@@ -29,14 +29,23 @@ $(document).ready(function() {
   // $sections includes all of the container divs that relate to menu items.
   var $sections = $('.section');
   var $currentSection;
-
+  $(".scroll").click(function() {
+    $('html,body').animate({
+      scrollTop: $('html').offset().top - navHeight + 1
+    }, 700);
+    return false
+  });
   $(window).scroll(function() {
     if ($(document).scrollTop() > 90) {
       $('.navbar').css('background-color', '#fff');
     } else {
       $('.navbar').css('background-color', 'transparent');
     }
-
+    if ($(this).scrollTop() > 50) {
+      $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+      $('.scrolltop').stop(true, true).fadeOut();
+    }
     // currentScroll is the number of pixels the window has been scrolled
     var currentScroll = $(this).scrollTop();
     // $currentSection is somewhere to place the section we must be looking at
@@ -73,7 +82,7 @@ $(document).ready(function() {
   });
 
   //scroll down na klik scrollDown buttona
-  $('.scrollDown-link').on('click', function(event) {
+  $('.scrollDown-link, .saznaj-vise').on('click', function(event) {
     event.preventDefault();
     $('html,body').animate({
       scrollTop: $(this.hash).offset().top - navHeight + 1

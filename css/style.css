@@ -135,11 +135,12 @@
     text-align: center;
   }
 
-  div.jumbotron {
+  div.jumbotron.fadeInUpBig {
     background-color: rgba(255, 255, 255, 0.43);
     text-align: center;
+    width: 70%;
     height: auto;
-    border-radius: 0.25em;
+    border-radius: 10px;
     margin: 0 auto;
     padding: 10px 20px;
   }
@@ -148,16 +149,17 @@
     margin: 5% auto;
   }
 
-  a.btn.btn-default {
-    max-width: 10%;
-    display: block;
-    margin: 7% auto 5%;
+  a.saznaj-vise {
+    text-align: center;
+    margin: 10% auto 5%;
     cursor: pointer;
-    padding: 15px;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 0.25em;
     transition: 0.3s all;
   }
 
-  a.btn.btn-default:hover {
+  a.saznaj-vise:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 10px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.2);
   }
@@ -264,6 +266,7 @@
       display: none;
     }
   }
+
   /*Div section about*/
 
   #about {
@@ -281,7 +284,7 @@
   }
 
   #about-content {
-  text-align: left;
+    text-align: left;
   }
 
   #list-about {
@@ -290,7 +293,7 @@
   }
 
   #map {
-    height: 533px ;
+    height: 533px;
     width: 100%;
     overflow: visible;
     position: relative;
@@ -352,4 +355,61 @@
       opacity: 1;
       transform: none;
     }
+  }
+
+  .modal {
+    overflow: visible;
+    z-index: 9000;
+  }
+  
+  .in {
+    /*background-color: transparent;*/
+    margin: 0;
+  }
+
+  .scrolltop {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+  }
+
+  .scroll {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #b2b2b2;
+    background: rgba(178, 178, 178, 0.7);
+    padding: 20px;
+    text-align: center;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+
+  .scroll:hover {
+    background: rgba(178, 178, 178, 1.0);
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+
+  .scroll:hover .fa {
+    padding-top: -10px;
+  }
+
+  .scroll .fa {
+    font-size: 30px;
+    margin-top: -5px;
+    margin-left: 1px;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
   }
