@@ -29,22 +29,20 @@ $(document).ready(function() {
   // $sections includes all of the container divs that relate to menu items.
   var $sections = $('.section');
   var $currentSection;
-  $(".scroll").click(function() {
+  $(".scrolltop").click(function(e) {
+    e.preventDefault();
     $('html,body').animate({
       scrollTop: $('html').offset().top - navHeight + 1
     }, 700);
     return false
   });
   $(window).scroll(function() {
-    if ($(document).scrollTop() > 90) {
+    if ($(this).scrollTop() > 90) {
       $('.navbar').css('background-color', '#fff');
+      $('a.scrolltop:hidden, a.scrolltop .fa').fadeIn();
     } else {
       $('.navbar').css('background-color', 'transparent');
-    }
-    if ($(this).scrollTop() > 50) {
-      $('.scrolltop:hidden').stop(true, true).fadeIn();
-    } else {
-      $('.scrolltop').stop(true, true).fadeOut();
+      $('a.scrolltop, a.scrolltop .fa').stop(false,false).fadeOut();
     }
     // currentScroll is the number of pixels the window has been scrolled
     var currentScroll = $(this).scrollTop();
@@ -74,7 +72,7 @@ $(document).ready(function() {
   });
 
   //scroll down na klik nav itema
-  $('.nav a[href*=\\#]').on('click', function(event) {
+  $('.nav a[href*=\\#], .footer-navigation p.links a').on('click', function(event) {
     event.preventDefault();
     $('html,body').animate({
       scrollTop: $(this.hash).offset().top - navHeight + 1

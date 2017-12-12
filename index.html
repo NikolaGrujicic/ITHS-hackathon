@@ -7,26 +7,29 @@
   <title>Hackathon</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="fonts/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="FlipClock-master/compiled/flipclock.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <!-- <link rel="stylesheet" href="FlipClock-master/compiled/flipclock.css"> -->
+  <link rel="stylesheet" href="flipclock.css">
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/clock.css">
-  <link rel="stylesheet" href="fonts/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="css/clock.css"> -->
 </head>
 
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand navbar-link" href="#"><img src="img/ithsLogo.png" height="60"></a>
+        <a class="navbar-brand navbar-link" href="#"><img src="img/logo.png" height="60"></a>
         <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
       </div>
       <div class="collapse navbar-collapse" id="navcol-1">
         <ul class="nav navbar-nav">
           <li role="presentation"><a class="text-uppercase navbar-item" href="#about-row">O hakatonu</a></li>
-          <li role="presentation"><a class="text-uppercase navbar-item" href="#mail">Kontakt </a></li>
-          <li role="presentation"><a class="text-uppercase navbar-item" href="#" data-toggle="modal" data-target="#prijava-modal">Prijava</a></li>
+          <li role="presentation"><a class="text-uppercase navbar-item" href="#uslovi">Uslovi</a></li>
+          <li role="presentation"><a class="text-uppercase navbar-item" href="#mail">Kontakt</a></li>
+          <li role="presentation"><a class="text-uppercase navbar-item prijava-link" data-toggle="modal" data-target="#prijava-modal">Prijava</a></li>
         </ul>
       </div>
     </div>
@@ -34,11 +37,12 @@
   <div class="landing-wrapper">
     <div class="container container-landing">
       <div class="jumbotron fadeInUpBig">
-        <h1 class="text-center">
+        <img src="img/heading.png" alt="" class="heading-img img-responsive">
+        <!-- <h1 class="text-center">
           <span>IT</span><span class="iths-name">HS</span><span> Hakaton</span>
-        </h1>
+        </h1> -->
         <!-- <div class="flip-clock"></div> -->
-        <div id="del-countdown">
+        <!-- <div id="del-countdown">
           <div id="clock"></div>
           <div id="units">
             <span>Dana</span>
@@ -46,16 +50,19 @@
             <span>Minuta</span>
             <span>Sekundi</span>
           </div>
-        </div>
+        </div> -->
+        <div class="clock"></div>
         <a class="btn btn-default saznaj-vise" href="#about-row">Saznaj više</a>
       </div>
     </div>
-    <a href="#about-row" class="scrollDown-link"><img src="img/scroll-down.png" class="scrollDown"></a>
+    <!-- <a href="#about-row" class="scrollDown-link"><img src="img/scroll-down.png" class="scrollDown"></a> -->
+    <div id="side-social-wrapper">
+      <a class="side-social" href="https://twitter.com/iths_beograd"><i class="social fa fa-twitter"></i></a>
+      <a class="side-social" href="https://www.youtube.com/channel/UCkABrAx_GvRTGEdLS0A4OCA"><i class="social fa fa-youtube"></i></a>
+      <a class="side-social" href="https://sr-rs.facebook.com/ITHSBeograd/"><i class="social fa fa-facebook-official"></i></a>
+    </div>
     <img class="img-responsive overlay fadeInUpBig" src="img/Hackathon.png" />
 
-    <a href="https://twitter.com/iths_beograd"><i class="fa fa-twitter"></i></a>
-    <a href="https://www.youtube.com/channel/UCkABrAx_GvRTGEdLS0A4OCA"><i class="fa fa-youtube"></i></a>
-    <a href="https://sr-rs.facebook.com/ITHSBeograd/"><i class="fa fa-facebook-official"></i></a>
   </div>
 
   <div class="container container-content">
@@ -63,95 +70,283 @@
       <h2 class="text-center" id="about">Šta je IT<span class="iths-name">HS</span> Hackathon?</h1>
       <div class="col-md-12" id="about-content">
       <div class="container">
-        <div class="col-md-4 stavka">
+        <div class="col-md-3 stavka">
           <ul id="list-about">
+            <h3 class="o-hakatonu">O hakatonu</h3>
             <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
             <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
             <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
           </ul>
         </div>
-        <div class="col-md-4 stavka">
+        <div class="col-md-6 stavka">
           <ul id="list-about">
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
+            <h3 class="agenda">Agenda</h3>
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Dan 1</th>
+                  <th scope="col">Dan 2</th>
+                  <th scope="col">Dan 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                </tr>
+                <tr>
+                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                </tr>
+                <tr>
+                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- <li class="text-center"><div class="btn btn-default">Pogledajte redosled dešavanja</div></li> -->
           </ul>
         </div>
-        <div class="col-md-4 stavka">
+        <div class="col-md-3 stavka">
           <ul id="list-about">
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
-            <li><p>ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p></li>
+            <h3 class="prostorije">Prostorije održavanja</h3>
+            <a href="#" data-toggle="modal" data-target="#prostorije-modal" class="btn btn-default prostorije-link text-center">
+              <span class="prostorije-view">Pogledajte prostorije</span>
+            </a>
           </ul>
         </div>
       </div>
       </div>
     </div>
-
+    <div class="row section" id="uslovi">
+      <div class="col-md-12 usloviGlavni">
+        <h2 id="UsloviHeading">Uslovi</h2>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 uslovi">
+          <div class="usloviPrijava">
+            <div class="heading">
+              <h4 id="naslovUslovi">Ko moze da se prijavi?</h4></div>
+            <div class="usloviP text-center">
+              <strong><small><i class="fa fa-user"></i></small></strong>
+              <hr>
+              <h5 id="naslovUslovi">Već oformljeni timovi - maksimalno 4 člana</h5>
+              <hr>
+              <h5 id="naslovUslovi">Srednjoškolci</h5>
+              <hr>
+              <h5 id="naslovUslovi">Rok za prijavu je 13. novembar</h5>
+              <hr>
+              <h5 id="naslovUslovi">Đaci tehničkih škola</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 uslovi">
+          <div class="usloviPrijava">
+            <div class="heading">
+              <h4 id="naslovUslovi">Šta je obezbeđeno?</h4></div>
+            <div class="usloviP text-center">
+              <strong><small><i class="fa fa-coffee"></i></small></strong>
+              <hr>
+              <h5 id="naslovUslovi">Hrana i piće u toku trajanja Hakatona</h5>
+              <hr>
+              <h5 id="naslovUslovi">Mentorska podrška</h5>
+              <hr>
+              <h5 id="naslovUslovi">Radni prostor</h5>
+              <hr>
+              <h5 id="naslovUslovi">Prostor za odmor i relaksaciju</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 uslovi">
+        <div class="usloviPrijava">
+          <div class="heading">
+            <h4 id="naslovUslovi">Šta poneti?</h4></div>
+          <div class="usloviP text-center">
+            <strong><small><i class="fa fa-briefcase"></i></small></strong>
+            <hr>
+            <h5 id="naslovUslovi">Lap top računare za sve članove tima </h5>
+            <hr>
+            <h5 id="naslovUslovi">Takmičarski duh</h5>
+            <hr>
+            <h5 id="naslovUslovi">Kreativnost</h5>
+            <hr>
+            <h5 id="naslovUslovi">Dobro raspoloženje</h5>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="row section">
+      <div class="col-md-12 section mentori">
+      <h3 class="mentori-heading">Mentori</h3>
+      <div class="col-md-4 col-sm-4 col-xs-12 mentor">
+        <div class="col-md-6 col-sm-12 col-xs-4 mentor-image">
+          <img src="img/nikola_dragovic-260x260.jpg" alt="" class="img-responsive mentor-img">
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-4 mentor-title">
+          <h4>Nikola Dragović <br> <h5> M.Sc.</h5> </h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 mentor">
+        <div class="col-md-6 col-sm-12 col-xs-4 mentor-image">
+          <img src="img/nikola_boskovic-1-220x220.jpg" alt="" class="img-responsive mentor-img">
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-4 mentor-title">
+          <h4>Nikola Bošković <br> <h5> M.Sc.</h5> </h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 mentor">
+        <div class="col-md-6 col-sm-12 col-xs-4 mentor-image">
+          <img src="img/dragan_golubovic-1-260x260.jpg" alt="" class="img-responsive mentor-img">
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-4 mentor-title">
+          <h4>Dragan Golubović <br> <h5> M.Sc.</h5> </h4>
+        </div>
+      </div>
+    </div>
+    </div>
     <div class="row section mail" id="mail">
       <div class="row">
         <div class="col-md-12">
           <h2>Kontakt informacije</h2>
-    </div>
-  </div>
-  <div class="col-md-6 col-sm-12">
-    <h3>Pošaljite nam mail sa pitanjima</h3>
-    <form class="mail-forma" method="post">
-      <div class="row">
-        <div class="col-md-12 col-sm-12">
-          <div class="form-group">
-            <input name="mail" class="form-control" type="email" placeholder="Mail adresa">
-          </div>
-          <div class="form-group">
-            <input name="naslov" class="form-control" type="text" placeholder="Naslov poruke">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12">
-          <div class="form-group error">
-            <textarea name="sadrzaj" class="form-control" placeholder="Napišite poruku" spellcheck="false"></textarea>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-12 text-center">
-          <input class="btn btn-lg send-mail col-md-12" name="posalji" type="submit" value="Pošalji">
         </div>
       </div>
-    </form>
-  </div>
-  <div class="col-md-6 col-sm-12">
-    <h3>Naša lokacija</h3>
-    <div id="map"></div>
-  </div>
-  </div>
-  <div class="row section" id="mapa">
-
-  </div>
-
-  <div class="modal fade" id="prijava-modal" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Prijava</h4>
+      <div class="col-md-6 col-sm-12 gde-se-nalazimo">
+        <h3>Gde se nalazimo</h3>
+        <div class="col-md-12">
+          <h4>Nalazimo se na adresi <em>Savski nasip 7</em> na Novom Beogradu, u okviru Comtrade kompleksa</h4>
         </div>
-        <div class="modal-body">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLVi7jV5C7ABpvk6udOW1iN4RpIgwSlMqOSHsFYDkDALZ7kg/viewform?embedded=true" width="500" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <div class="col-md-6 sm-6 xs-6">
+          <img src="img/zgrada.jpg" alt="" class="img img-responsive zgrada">
         </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Potvrdi</button> -->
-          <button type="button" class="btn btn-default" data-dismiss="modal">Odustani</button>
+        <div class="col-md-6 xs-6"><img src="img/zgrada1.jpg" alt="" class="img img-responsive zgrada"></div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h3 class="mail-heading">Imate pitanja? <br> Pošaljite nam mail</h3>
+        <form class="mail-forma" method="post">
+          <div class="row">
+            <div class="col-md-6 mail-inputs">
+              <div class="form-group text-center mail-icon">
+                <span class="fa fa-envelope text-center"></span>
+              </div>
+              <div class="form-group">
+                <input name="mail" class="form-control" type="email" placeholder="Mail adresa">
+              </div>
+              <div class="form-group">
+                <input name="naslov" class="form-control" type="text" placeholder="Naslov poruke">
+              </div>
+            </div>
+            <div class="col-md-6 form-group error col-md-push-right">
+              <textarea name="sadrzaj" class="form-control" placeholder="Napišite poruku" spellcheck="false"></textarea>
+            </div>
+            <div class="col-lg-12 col-md-12 text-center">
+              <input class="btn btn-lg send-mail col-md-12" name="posalji" type="submit" value="Pošalji">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row section mapa">
+    <div class="col-md-12">
+      <h2>Naša lokacija na mapi</h2>
+      <div id="map"></div>
+    </div>
+  </div>
+    <div class="modal fade" id="prijava-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Prijava</h4>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLVi7jV5C7ABpvk6udOW1iN4RpIgwSlMqOSHsFYDkDALZ7kg/viewform?embedded=true" width="500" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Potvrdi</button> -->
+            <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class='scrolltop'>
-    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
-  </div>
-  </div>
 
+    <div class="modal fade" id="prostorije-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Prostorije i opremljenost</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="img/screen-1.jpg" alt="" class="img img-responsive img-prostorije">
+              </div>
+              <div class="col-md-4">
+                <img src="img/Mac12.jpg" alt="" class="img img-responsive img-prostorije">
+              </div>
+              <div class="col-md-4">
+                <img src="img/G20-1.jpg" alt="" class="img img-responsive img-prostorije">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Potvrdi</button> -->
+            <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 footer-navigation">
+        <h3><a href="http://www.iths.edu.rs/"><img class="img-thumbnail" src="img/logo.png" ></a></h3>
+        <p class="links">
+          <a href="#about-row">O Hakatonu</a><strong> · </strong>
+          <a href="#uslovi">Uslovi </a><strong> ·</strong>
+          <a href="#mail">Kontakt </a><strong> · </strong>
+          <a href="#" data-toggle="modal" data-target="#prijava-modal">Prijava </a><strong></strong>
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-6 footer-contacts">
+        <div id="footer-kontakt-wrapper">
+          <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+            <p><span class="new-line-span">Savski nasip 7 </span> Beograd 11070</p>
+          </div>
+          <div><span class="fa fa-phone footer-contacts-icon"></span>
+            <p class="footer-center-info email text-left"> +381 11 123456</p>
+          </div>
+          <div><span class="fa fa-envelope footer-contacts-icon"></span>
+            <p> <a href="#" target="_blank">hakaton@iths.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 footer-about">
+        <h4>O srednjoj ITHS školi</h4>
+          <p>
+            Srednja škola za informacione tehnologije (ITHS) prva je obrazovna ustanova ovakvog tipa u Srbiji. Osim stručnih znanja iz ove oblasti, učenici naše škole stiču i opšte obrazovanje. Modernom, efikasnom i pre svega interaktivnom nastavom, prilagođenom potrebama, sposobnostima i interesovanjem učenika, nudimo profil IT tehničara kakav traži savremeno društvo.
+          </p>
+        <div class="social-links social-icons">
+          <a href="https://sr-rs.facebook.com/ITHSBeograd/"><span class="fa fa-facebook"></span></a>
+          <a href="https://www.youtube.com/channel/UCkABrAx_GvRTGEdLS0A4OCA"><span class="fa fa-youtube"></span></a>
+          <a href="https://twitter.com/iths_beograd"><span class="fa fa-twitter"></span></a>
+        </div>
+      </div>
+    </div>
+    <p class="company-name">ITHS - Information Technology High School © 2017 </p>
+  </footer>
+  <a href="#" class="scrolltop">
+    <span class="fa fa-arrow-up" aria-hidden="true"><span>
+  </a>
   <script src="js/jquery.min.js"></script>
+  <script src="jquery.countdown.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="FlipClock-master/compiled/flipclock.min.js"></script>
+  <!-- <script src="FlipClock-master/compiled/flipclock.min.js"></script> -->
+  <script src="flipclock.js"></script>
   <script src="js/load.js"></script>
   <script src="js/mailValidacija.js"></script>
   <script src="js/flipclock-implement.js"></script>

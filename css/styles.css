@@ -3,6 +3,8 @@
 }
 
 textarea.form-control{
+  max-width: 100%;
+  min-width: 100%;
   height:249px;
 }
 
@@ -10,13 +12,12 @@ textarea.form-control{
   display:block;
   width:100%;
   height:auto;
-  padding:20px;
-  font-size:1.55rem;
+  padding:13px;
+  font-size: 16px;
   line-height:1.25;
-  color:#E4022E;
-  background-color: rgba(255, 255, 255, 0.79);
+  color:#fafafa;
+  background-color: rgba(255, 255, 255, 0);
   background-image:none;
-  font-size: 20px;
   border-radius:.25rem;
   -webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
   -o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
@@ -27,9 +28,9 @@ textarea.form-control{
 .form-control:active,
 textarea.form-control:focus,
 textarea.form-control:active {
-  background: rgba(255, 255, 255, 0.79) no-repeat;
-  box-shadow: inset 0 1px 3px rgba(228, 2, 46, 0.79),0 0 15px rgba(228, 2, 46, 0.75);
-  border: solid 0.5px #e4022e;
+  background: rgba(255, 255, 255, 0) no-repeat;
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.8),0 0 10px rgba(255, 255, 255, 0.8);
+  border: solid 0.5px #fff;
   outline: 0 none;
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   /*background-image: linear-gradient(to bottom, #0d0d0d, #0d0d0d), linear-gradient(to bottom, #757575, #757575);
@@ -45,7 +46,7 @@ h2.text-danger.section-heading{
 }
 
 .btn.send-mail {
-  background-color: #0d0d0d;
+  background-color: #333;
   font-size: 24px;
   color: white;
   border: none;
@@ -60,11 +61,12 @@ h2.text-danger.section-heading{
 .btn.send-mail:active {
   background-color: #fff;
   color: #e4022e;
-  transform: scale(1.05);
+  transform: scale(1.011);
 }
 
 .mail {
-  background: linear-gradient(120deg, rgba(13, 13, 13, 0.72) 40%, rgba(228, 2, 46, 0.7) 130%);
+  background: #0d0d0d;
+  /*background: linear-gradient(120deg, rgba(13, 13, 13, 0.72) 40%, rgba(228, 2, 46, 0.7) 130%);*/
   padding: 20px 43px;
   border-radius:.25rem;
 }
