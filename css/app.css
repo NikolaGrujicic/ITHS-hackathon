@@ -428,9 +428,9 @@ pre[class*="language-"] {
 }
 
 @media screen and (max-width:1016px) {
-  .flip-clock-wrapper {
+  /* .flip-clock-wrapper {
     width: 400px;
-  }
+  } */
   .flip-clock-wrapper ul {
     width: 32px;
     height: 54px;
@@ -499,31 +499,12 @@ pre[class*="language-"] {
     top: 18px;
   }
   .flip-clock-divider .flip-clock-label {
-    right: -45px;
+    right: -41px;
   }
   .flip-clock-divider.minutes .flip-clock-label {
-    right: -50px;
+    right: -46px;
   }
   .flip-clock-divider.seconds .flip-clock-label {
     right: -53px;
-  }
-}
-
-@media screen and (max-width:525px) {
-  div.jumbotron.fadeInUpBig {
-    padding: 10px 0px;
-  }
-  .flip-clock-divider .flip-clock-label {
-    top: -1em;
-  }
-}
-
-@media screen and (max-width:525px) {
-  .flip-clock-wrapper {
-    width: 223px;
-    margin: 0;
-  }
-  .flip-clock-wrapper span:nth-child(10), .flip-clock-wrapper ul:nth-child(11), .flip-clock-wrapper ul:nth-child(12) {
-    display: none;
   }
 }

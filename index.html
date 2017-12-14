@@ -79,44 +79,40 @@
           </ul>
         </div>
         <div class="col-md-6 stavka">
-          <ul id="list-about">
-            <h3 class="agenda">Agenda</h3>
-            <table class="table">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">Dan 1</th>
-                  <th scope="col">Dan 2</th>
-                  <th scope="col">Dan 3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
-                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
-                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
-                </tr>
-                <tr>
-                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
-                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
-                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
-                </tr>
-                <tr>
-                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
-                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
-                  <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- <li class="text-center"><div class="btn btn-default">Pogledajte redosled dešavanja</div></li> -->
-          </ul>
+          <h3 class="agenda">Raspored dešavanja</h3>
+          <table class="table table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">28.1.</th>
+                <th scope="col">29.1.</th>
+                <th scope="col">30.1.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+              </tr>
+              <tr>
+                <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+              </tr>
+              <tr>
+                <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+                <td><span class="vreme">13:30 - 14:00</span><br> <span class="desavanje">Početak</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- <li class="text-center"><div class="btn btn-default">Pogledajte redosled dešavanja</div></li> -->
         </div>
         <div class="col-md-3 stavka">
-          <ul id="list-about">
-            <h3 class="prostorije">Prostorije održavanja</h3>
-            <a href="#" data-toggle="modal" data-target="#prostorije-modal" class="btn btn-default prostorije-link text-center">
-              <span class="prostorije-view">Pogledajte prostorije</span>
-            </a>
-          </ul>
+          <h3 class="prostorije">Prostorije održavanja</h3>
+          <a href="#" data-toggle="modal" data-target="#prostorije-modal" class="btn btn-default prostorije-link text-center">
+            <span class="prostorije-view">Pogledajte prostorije</span>
+          </a>
         </div>
       </div>
       </div>
@@ -249,7 +245,7 @@
     </div>
     <div class="row section mapa">
     <div class="col-md-12">
-      <h2>Naša lokacija na mapi</h2>
+      <h2 class="mapa-heading">Naša lokacija na mapi</h2>
       <div id="map"></div>
     </div>
   </div>
@@ -280,13 +276,13 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-6 col-sm-6  col-xs-12">
                 <img src="img/screen-1.jpg" alt="" class="img img-responsive img-prostorije">
               </div>
-              <div class="col-md-4">
+              <div class="col-md-6 col-sm-6 col-xs-12">
                 <img src="img/Mac12.jpg" alt="" class="img img-responsive img-prostorije">
               </div>
-              <div class="col-md-4">
+              <div class="col-md-6 col-sm-6 col-xs-12">
                 <img src="img/G20-1.jpg" alt="" class="img img-responsive img-prostorije">
               </div>
             </div>
@@ -314,13 +310,13 @@
       <div class="col-md-4 col-sm-6 footer-contacts">
         <div id="footer-kontakt-wrapper">
           <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
-            <p><span class="new-line-span">Savski nasip 7 </span> Beograd 11070</p>
+            <p>Savski nasip 7 <span class="new-line-span"> Beograd 11070</span></p>
           </div>
           <div><span class="fa fa-phone footer-contacts-icon"></span>
             <p class="footer-center-info email text-left"> +381 11 123456</p>
           </div>
           <div><span class="fa fa-envelope footer-contacts-icon"></span>
-            <p> <a href="#" target="_blank">hakaton@iths.com</a></p>
+            <p class="footer-mail">hakaton@iths.com</p>
           </div>
         </div>
       </div>

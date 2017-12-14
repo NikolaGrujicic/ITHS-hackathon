@@ -3,10 +3,10 @@ $(document).ready(function() {
     // Styles a map in night mode.
     var map = new google.maps.Map(document.getElementById('map'), {
       center: {
-        lat: 44.7866,
-        lng: 20.4489
+        lat: 44.801707,
+        lng: 20.420396,
       },
-      zoom: 13,
+      zoom: 14,
       styles: [{
           "elementType": "geometry",
           "stylers": [{
@@ -151,14 +151,43 @@ $(document).ready(function() {
         }
       ]
     });
+    // var service = new google.maps.places.PlacesService(map);
+
+    // service.getDetails({
+    //   placeId: 'ChIJERjqGu1vWkcR93CY_JN9dQA'
+    // }, function(place, status) {
+    //   if (status === google.maps.places.PlacesServiceStatus.OK) {
+    //     var marker = new google.maps.Marker({
+    //       map: map,
+    //       position: place.geometry.location
+    //     });
+    //     google.maps.event.addListener(marker, 'hover', function() {
+    //       infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+    //         place.formatted_address + '</div>');
+    //       infowindow.open(map, this);
+    //     });
+    //   }
+    // });
+
+    contentString = '<b>Savski nasip 7, Novi Beograd <br> Comtrade</b>'
+
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+
     var marker = new google.maps.Marker({
       position: {
-        lat: 44.801842,
-        lng: 20.419488
+        lat: 44.801707,
+        lng: 20.420396,
+        title: 'Savski nasip 7, Novi Beograd'
       },
       map: map,
       icon: ''
     });
+    infowindow.open(map, marker);
+    // marker.addListener('click', function() {
+    // })
+
   }
   initMap();
 });
