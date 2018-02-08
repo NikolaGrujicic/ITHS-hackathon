@@ -1,35 +1,36 @@
 #del-countdown{
-    width: 100%;
-    margin: 0 auto;
-    display: block;
+    width: 600px;
+    margin:  15% auto;
+    margin-top:5% !important; 
+    margin-bottom: 8% !important;
   }
   #clock span{
     float: left;
     text-align: center;
-    font-size: 54px;
+    font-size: 64px;
     margin: 0 2.5%;
-    color: #fafafa;
+    color: rgb(0, 0, 0);
     opacity: 3;
-    padding: 15px;
+    padding: 20px;
     width: 20%;
-    border-radius: 0.25em;
+    border-radius: 0.20em;
     box-sizing: border-box;
   }
   #clock span:nth-child(1){
-    background: #0d0d0d;
-    opacity: 0.75;
+    background: #ff3e44;
+    opacity: 0.65;
   }
   #clock span:nth-child(2){
-    background: #0d0d0d;
-    opacity: 0.75;
+    background: #ff3e44;
+    opacity: 0.65;
   }
   #clock span:nth-child(3){
-    background: #0d0d0d;
-    opacity: 0.75;
+    background: #ff3e44;
+    opacity: 0.65;
   }
   #clock span:nth-child(4){
-    background: #0d0d0d;
-    opacity: 0.75;
+    background: #ff3e44;
+    opacity: 0.65;
   }
   #clock:after{
     content: "";
@@ -41,43 +42,39 @@
     width: 25%;
     text-align: center;
     margin-top: 20px;
-    color: #fafafa;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 13px;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
   }
-
-  #units span:nth-child(4){
-    display: block;
-  }
-
+  
   span.turn{
-    animation: turn 0.9s ease forwards;
+    animation: turn 0.7s ease forwards;
   }
-
+  
   @keyframes turn{
     0%{transform: rotateX(0deg)}
     100%{transform: rotateX(360deg)}
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     #clock span{
       float: left;
       text-align: center;
       font-size: 38px;
       margin: 0 2.5%;
-      color: #fafafa;
+      color: rgb(0, 0, 0);
       padding: 15px;
       width: 20%;
-      border-radius: 0.25em;
+      border-radius: 0.20em;
       box-sizing: border-box;
     }
 
     #del-countdown{
       width: 400px;
       margin:  15% auto;
-      margin-top:10% !important;
+      margin-top:10% !important; 
       margin-bottom: 10% !important;
     }
 
@@ -86,7 +83,7 @@
       width: 25%;
       text-align: center;
       margin-top: 20px;
-      color: #fafafa;
+      color: rgb(0, 0, 0);
       text-transform: uppercase;
       font-size: 9px;
       letter-spacing: 2px;
@@ -94,23 +91,23 @@
     }
   }
 
-  @media screen and (max-width: 468px) {
+  @media screen and (max-width: 768px) {
     #clock span{
       float: left;
       text-align: center;
       font-size: 24px;
       margin: 0 2.5%;
-      color: #fafafa;
+      color: rgb(0, 0, 0);
       padding: 15px;
       width: 20%;
-      border-radius: 0.25em;
+      border-radius: 0.20em;
       box-sizing: border-box;
     }
 
     #del-countdown{
       width: 260px;
       margin:  15% auto;
-      margin-top:10% !important;
+      margin-top:10% !important; 
       margin-bottom: 10% !important;
     }
 
@@ -119,10 +116,62 @@
       width: 25%;
       text-align: center;
       margin-top: 20px;
-      color: #fafafa;
+      color: rgb(0, 0, 0);
       text-transform: uppercase;
       font-size: 9px;
       letter-spacing: 2px;
       text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+    a.saznaj-vise{
+      width: 110px;
+      font-size: 14px;
+      margin: 15% auto 3%;
+    }
+  }
+
+  @media screen and (max-width: 476px) {
+    #clock span{
+      float: left;
+      text-align: center;
+      font-size: 18px;
+      margin: 0 2.5%;
+      color: rgb(0, 0, 0);
+      padding: 11px;
+      width: 19%;
+      border-radius: 0.20em;
+      box-sizing: border-box;
+    }
+
+    #del-countdown{
+      width: 210px;
+      margin:  15% auto;
+      margin-top:10% !important; 
+      margin-bottom: 10% !important;
+    }
+
+    #units span{
+      float: left;
+      width: 24%;
+      text-align: center;
+      margin-top: 20px;
+      color: rgb(0, 0, 0);
+      text-transform: uppercase;
+      font-size: 8px;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+    }
+    a.saznaj-vise{
+      width: 65px;
+      font-size: 8px;
+      margin: 20% auto 3%;
+    }
+    div.jumbotron.fadeInUpBig {
+      background-color: rgba(255, 255, 255, 0.43);
+      text-align: center;
+      width: 80%;
+      height: auto;
+      border-radius: 10px;
+      margin:40px auto 0;
+      padding: 10px 15px;
     }
   }
